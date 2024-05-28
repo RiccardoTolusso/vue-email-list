@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BONUS - vue email list</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/c3f6cda4b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="app" v-cloak>
+        <h1>{{ title }}</h1>
+        <ul>
+            <li v-for="email in emails">
+                <a :href="`mailto:${email}`">
+                    <p>{{ email }}</p>
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+
+    <!-- vue.js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- /vue.js -->
+
+    <!-- axion.js -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- /axion -->
+
+    <!-- main.js -->
+    <script src="./js/main.js"></script>
+    <!-- /main.js -->
+</body>
+</html>
