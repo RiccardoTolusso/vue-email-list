@@ -5,7 +5,7 @@ createApp({
         return {
             title: "Mailing List",
             emails: [],
-            numOfEmails: 10,
+            numOfEmails: 12,
         }
     },
     methods:{
